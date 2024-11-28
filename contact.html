@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--Link to Tailwind CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+    <!--Offerbar-->
+    <div id="offerBar" style="background-color:#1d232c; color:rgb(226,225,225);height:50px;">
+        <div class="flex p-2 justify-around" style="margin-left:20%;">
+            <p class="text-xs p-2 md:text-lg">Sign Up and <span style="font-weight: 600;">Get 20% OFF</span>
+            for your first Order</p>
+            <p id="cancelOffer" class="text-xs p-2 cursor-pointer md:text-lg">X<p>
+        </div>
+    </div>
+    
+    <!--Responsive Nav bar-->
+    <div id="navBar" class="bg-white flex p-2 m-2 justify-between shadow-xl sticky top-0 z-30">
+        <h2 style="font-size:larger; font-weight:700; margin-left:5%;">Nostra</h2>
+    
+        <svg id="menuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+    
+        <ul class="hidden md:flex gap-16">
+            <li>
+                <a href="./index.html" target="_blank" class="hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">New Arrival</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Most Wanted</a>
+            </li>
+            <li>
+                <a href="./collections.html" target="_blank" class="hover:underline">Collections</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    
+     <!--Side Nav-->
+    
+     <section id="sideNav" class="fixed top-0 z-40 left-0 transition-all duration-1000 m-2 p-2" style="background-color:#1d232c;color:rgb(226,225,225);width:50%;height:100vh; left:-50%;">
+        <div class="text-right p-5">
+            <p id="cancelNav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 p-5">
+            <li>
+                <a href="./index.html" target="_blank" class="hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">New Arrival</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Most Wanted</a>
+            </li>
+            <li>
+                <a href="./collections.html" target="_blank" class="hover:underline">Collections</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </li>
+        </ul>
+    
+    </section>
+    <!--Contact Form-->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+        </div>
+      </section>
+   <!--Letter-->
+<section class="hidden md:block">
+    <h2 class="font-bold text-2xl text-center p-2">Join our News Letter</h2>
+    <p class="text-center">Signup for our email newspaper to get exclusive discounts,updates and more</p>
+    <div class="grid grid-rows-2 place-items-center">
+        <input type="text" class="border border-black p-2 m-3 w-1/2">
+            <button class="bg-black text-white h-10 w-20 text-center underline">
+                <a href="#">Subscribe</a>
+            </button>
+        </div>
+       
+    </div>
+ 
+</section>
+ <!--Footer-->
+ <footer class="flex flex-col justify-evenly p-10 m-2 gap-4 w-full h-4/5 text-white" style="background-color: #1d232c;">
+    <h1 class="font-bold text-3xl">Nostra</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iste reiciendis, sint suscipit quia dignissimos laborum similique dolorum rerum id?</p>
+    <p>&copy; 2024 Nostra.com</p>
+ </footer>
+    
+</body>
+
+     <script src="./contact.js"></script>
+</html>

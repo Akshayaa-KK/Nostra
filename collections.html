@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+      <!--Link to Google fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <!--Link to TailWind CSS-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+      <!--Link Font Awesome-->
+       <!--Font awesome cdn link-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body style="font-family:Poppins, sans-serif;">
+   <!--Offerbar-->
+   <div id="offerBar" style="background-color:#1d232c; color:rgb(226,225,225);height:50px;">
+    <div class="flex p-2 justify-around" style="margin-left:20%;">
+        <p class="text-xs p-2 md:text-lg">Sign Up and <span style="font-weight: 600;">Get 20% OFF</span>
+        for your first Order</p>
+        <p id="cancelOffer" class="text-xs p-2 cursor-pointer md:text-lg">X<p>
+    </div>
+</div>
+
+<!--Responsive Nav bar-->
+<div id="navBar" class="bg-white flex p-2 m-2 justify-between shadow-xl sticky top-0 z-30">
+    <h2 style="font-size:larger; font-weight:700; margin-left:5%;">Nostra</h2>
+
+    <svg id="menuBar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+
+    <ul class="hidden md:flex gap-16">
+        <li>
+            <a href="./index.html" target="_blank" class="hover:underline">Home</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">New Arrival</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Most Wanted</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Collections</a>
+        </li>
+        <li>
+            <a href="./contact.html" target="_blank" hover:underline">Contact Us</a>
+        </li>
+    </ul>
+</div>
+
+ <!--Side Nav-->
+
+ <section id="sideNav" class="fixed top-0 z-40 left-0 transition-all duration-1000 m-2 p-2" style="background-color:#1d232c;color:rgb(226,225,225);width:50%;height:100vh; left:-50%;">
+    <div class="text-right p-5">
+        <p id="cancelNav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class="flex flex-col gap-10 p-5">
+        <li>
+            <a href="./index.html" target="_blank" class="hover:underline">Home</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">New Arrival</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Most Wanted</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Collections</a>
+        </li>
+        <li>
+            <a href="./contact.html" target="_blank" class="hover:underline">Contact Us</a>
+        </li>
+    </ul>
+
+</section>
+<div class="m-2 p-2 flex justify-normal gap-20 relative">
+            <div id="choose">
+                <div class="relative">
+                    <div>
+                        <h1 class="font-extrabold text-xl mt-3 md:text-2xl">Occasion</h1>
+                        <div>
+                            <input type="checkbox" value="summer" id="summer">
+                            <label class="mt-2">Summer</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="party" id="party">
+                            <label class="mt-2">Party</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="beach" id="beach">
+                            <label class="mt-2">Beach</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-xl mt-3 md:text-2xl">Colors</h1>
+                        <div>
+                            <input type="checkbox" value="red" id="red">
+                            <label class="mt-2">Red</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="blue" id="blue">
+                            <label class="mt-2">Blue</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="white" id="white">
+                            <label class="mt-2">White</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="green" id="green">
+                            <label class="mt-2">Green</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-xl mt-3 md:text-2xl">Arrivals</h1>
+                        <div>
+                            <input type="checkbox" value="new" id="new">
+                            <label class="mt-2">New</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="old" id="old">
+                            <label class="mt-2">Old</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- <form class="border-2 border-[#1d232c] rounded-md w-3/4 h-10 pl-2 relative">
+        <input type="text" placeholder="search" class="pt-2">
+        <button type="submit" class="absolute right-0 p-2">🔍</button>
+    </form> -->
+    <products id="product" class="m-4 p-4 grid grid-cols-2 md:grid-cols-4 mt-5 gap-8" style="margin-left:10%;">
+        <div class="summer" style="display: block;">
+            <img src="./Images/Summer/f1 (1).jpg" class="w-52 inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Floral Summer Shirt</h2>
+            <p class="hidden" name="attributes">summer,new,multi</p>
+            <p>$20</p>
+        </div>
+        <div class="summer" style="display: block;">
+            <img src="./Images/Summer/f2.jpg" class="w-52 inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Summer Green</h2>
+            <p class="hidden" name="attributes">summer,green,old</p>
+            <p>$22</p>
+        </div>
+        <div class="party" style="display: block;">
+            <img src="./Images/Summer/f3.jpg" class="w-52  inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Party floral Shirt</h2>
+            <p class="hidden" name="attributes">party,red,old</p>
+            <p>$25</p>
+        </div>
+        <div class="summer" style="display: block;">
+            <img src="./Images/Summer/f4.jpg" class="w-52 inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Cool Summer Shirt</h2>
+            <p class="hidden" name="attributes">summer,white,new</p>
+            <p>$30</p>
+        </div>
+        <div class="beach" style="display: block;">
+            <img src="./Images/Summer/f5.jpg" class="w-52 inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Beach Blue Shirt</h2>
+            <p class="hidden" name="attributes">beach,blue,new</p>
+            <p>$25</p>
+        </div>
+        <div class="party" style="display: block;">
+            <img src="./Images/Summer/f6.jpg" class="w-52  inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Party Handsome</h2>
+            <p class="hidden" name="attributes">party,red,new</p>
+            <p>$40</p>
+        </div>
+        <div class="summer" style="display: block;">
+            <img src="./Images/Summer/f1 (1).jpg" class="w-52 inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Floral Summer Shirt</h2>
+            <p class="hidden" name="attributes">summer,new,multi</p> 
+            <p>$20</p>
+        </div>
+        <div class="summer" style="display: block;">
+            <img src="./Images/Summer/f2.jpg" class="w-52 inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer">
+            <h2 class="text-sm font-medium md:text-xl">Summer Green</h2>
+            <p class="hidden" name="attributes">summer,green,old</p>
+            <p>$22</p>
+        </div>
+    </products>
+</div>
+<!--Letter-->
+<section class="hidden md:block">
+    <h2 class="font-bold text-2xl text-center p-2">Join our News Letter</h2>
+    <p class="text-center">Signup for our email newspaper to get exclusive discounts,updates and more</p>
+    <div class="grid grid-rows-2 place-items-center">
+        <input type="text" class="border border-black p-2 m-3 w-1/2">
+            <button class="bg-black text-white h-10 w-20 text-center underline">
+                <a href="#">Subscribe</a>
+            </button>
+        </div>
+       
+    </div>
+ 
+</section>
+ <!--Footer-->
+ <footer class="flex flex-col justify-evenly p-10 m-2 gap-4 w-full h-4/5 text-white" style="background-color: #1d232c;">
+    <h1 class="font-bold text-3xl">Nostra</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iste reiciendis, sint suscipit quia dignissimos laborum similique dolorum rerum id?</p>
+    <p>&copy; 2024 Nostra.com</p>
+ </footer>
+</body>
+<script src="./collection.js"></script>
+</html>
